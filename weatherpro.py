@@ -15,7 +15,7 @@ class GetWeather:
     
     # takes city name and returns latitude and longitude
     def locationData(self, cityName):
-                locationApi = "8ff0ec755a4b49"
+                locationApi = "get your own api key"
                 locationUrl = "https://us1.locationiq.com/v1/search.php?key={}&q={}&format=json".format(locationApi, cityName)
                 locationData = requests.get(locationUrl).json()
                 lat = locationData[0]["lat"]
@@ -26,7 +26,7 @@ class GetWeather:
     # takes latitude and longitude and give weather data
     def darkSkyData(self, cityName, units):
             lat, lon, showCity = self.locationData(cityName)
-            weatherApi = "b17e2674e7c52ad7f257113c5e3e1af5"
+            weatherApi = "get your own api key"
             weatherUrl = "https://api.darksky.net/forecast/{}/{},{}?units={}".format(weatherApi, lat, lon, units)
             weatherData = requests.get(weatherUrl).json()
             return weatherData, units, showCity
