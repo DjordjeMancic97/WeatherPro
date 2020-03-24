@@ -4,3 +4,9 @@
     .%%%%%%%..%%......%%..%%....%%....%%..%%..%%......%%..%%..%%......%%..%%..%%..%%.
     ..%%.%%...%%%%%%..%%..%%....%%....%%..%%..%%%%%%..%%..%%..%%......%%..%%...%%%%..
     .................................................................................
+
+    - Get current and daily weather info
+    - Supports both Celsius and Fahrenheit
+    - Use shorthand (args) for quick weather summary or just run program normally
+    for full experience
+    - Quick weather mode uses Text To Speech
