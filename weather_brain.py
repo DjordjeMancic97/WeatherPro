@@ -4,7 +4,7 @@ class WeatherPro:
 
     # takes city name and returns latitude and longitude
     def get_locationData(self, cityName):
-        locationApi = "8ff0ec755a4b49"
+        locationApi = "get your own locationiq key"
         locationUrl = f"https://us1.locationiq.com/v1/search.php?key={locationApi}&q={cityName}&format=json"
         locationData = requests.get(locationUrl).json()
         lat = locationData[0]["lat"]
@@ -15,7 +15,7 @@ class WeatherPro:
     # takes latitude and longitude and give weather data
     def get_weatherData(self, cityName, units):
         lat, lon, showCity = self.get_locationData(cityName)
-        weatherApi = "b17e2674e7c52ad7f257113c5e3e1af5"
+        weatherApi = "get your own darksky key"
         weatherUrl = f"https://api.darksky.net/forecast/{weatherApi}/{lat},{lon}?units={units}"
         weatherData = requests.get(weatherUrl).json()
         return weatherData, units, showCity
