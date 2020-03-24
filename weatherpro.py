@@ -4,8 +4,6 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("-c", help="C stands for Celsius and expects city name after. Example: python weatherpro.py -c Belgrade")
 parser.add_argument("-f", help="F stands for Fahrenheit and expects city name after. Example: python weatherpro.py -f Belgrade")
-parser.add_argument("-ttsc", help="TTSc stands for Celsius and expects city name after. Example: python weatherpro.py -ttsc Belgrade")
-parser.add_argument("-ttsf", help="TTSc stands for Fahrenheit and expects city name after. Example: python weatherpro.py -ttsf Belgrade")
 args = parser.parse_args()
 
 if args.c:
